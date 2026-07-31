@@ -1,0 +1,23 @@
+body{
+    display: flex;
+}
+
+.header{
+    display: flex;
+    outline: 2px solid red;
+    justify-content: space-evenly;
+    flex-grow: 1;
+
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 10px; 
+}
+
+.links a{
+    text-decoration: none;
+    
+}
+
