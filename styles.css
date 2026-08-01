@@ -1,7 +1,9 @@
 body{
     display: flex;
+    flex-direction: column;
 }
 
+/*first row*/
 .header{
     display: flex;
     outline: 2px solid red;
@@ -18,6 +20,34 @@ body{
 
 .links a{
     text-decoration: none;
-    
 }
 
+/*second row*/
+
+.welcome{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.left-content{
+    width:500px;
+}
+
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    outline: 2px red solid ;
+    width: 400px;
+    height: 200px;
+}
+
+.photo img{
+    width: 400px;
+    height: auto;
+}
+
+.photo p{
+    position: absolute;
+}
