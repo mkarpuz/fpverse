@@ -2,15 +2,24 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/*first row*/
+/*header*/
 .header{
     display: flex;
     outline: 2px solid red;
-    justify-content: space-between;
+    background-color: #1F2937;
+    justify-content: space-evenly;
+    align-items: center;
     flex-grow: 1;
+    padding-bottom: 2cm;
 
+}
+
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .links ul{
@@ -21,18 +30,42 @@ body{
 
 .links a{
     text-decoration: none;
+    color: white;
 }
 
-/*second row*/
+/*first row*/
+
+.first-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #1F2937;
+    padding-bottom: 100px;
+}
 
 .welcome{
+    outline: 2px solid red;
+    width: 900px;
     display: flex;
     justify-content: space-evenly;
     gap: 100px;
 }
 
 .left-content{
+    outline: 2px solid black;
     width:500px;
+    color: white;
+}
+
+.welcome .left-content .main-text{
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.welcome.left-content .secondary-text{
+    font-size: 18px;
 }
 
 
@@ -109,8 +142,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 300px;
-    padding: 50px;
+    height: 400px;
     margin: auto;
     background-color: #E5E7EB;
 }
