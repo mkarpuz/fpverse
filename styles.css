@@ -1,8 +1,9 @@
 body{
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*1. first row*/
@@ -13,7 +14,7 @@ body{
     flex-direction: column;
     background-color: #1F2937;
     width: 100%;
-    height: 530px;
+    min-height: 530px;
 
 }
 
@@ -69,7 +70,7 @@ body{
 }
 
 .left-content{
-    width:500px;
+    min-width:500px;
     color: white;
 
 }
@@ -81,11 +82,11 @@ body{
     margin-bottom: 0%;
 }
 
-.welcome.left-content .secondary-text{
+.welcome .left-content .secondary-text{
     font-size: 18px;
 }
 
-.left-content .signup{
+.left-content button{
     background-color: #3882F6;
     color: white;
     font-size: 18px;
@@ -94,6 +95,8 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5%;
+    border: none
+    cursor: pointer;
 }
 
 
@@ -112,7 +115,7 @@ body{
 /* 2. second row*/
 
 .second-row{
-    background-color: white
+    background-color: white;
     width: 100%;
     height: 400px;
     display: flex;
@@ -123,7 +126,7 @@ body{
 
 .card{
     display: flex;
-    width: 150px;
+    width: 165px;
     justify-content: center;
     align-items: center;
 }
@@ -138,7 +141,7 @@ h1{
     display: flex;
     align-content: center;
     justify-content: center;
-    gap: 50px;
+    gap: 55px;
     width: 700px;
     height: auto;
     margin: 0 auto
@@ -156,8 +159,8 @@ h1{
 
 
 .card img{
-    width: 150px;
-    height: 150px;
+    width: 165px;
+    height: 165px;
     border-radius: 10%;
     
 }
@@ -171,12 +174,11 @@ h1{
 /* 3. Third row*/
 
 .third-row{
-    outline: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 400px;
+    height: 470px;
     margin: auto;
     background-color: #E5E7EB;
 }
@@ -184,8 +186,8 @@ h1{
 .third-row .quote{
     display: flex;
     flex-direction: column;
-    align-self: center;
     margin: auto;
+    padding: 5cm;
    
 }
 
@@ -194,41 +196,73 @@ h1{
     color: #1F2937;
     font-weight: 300;
     font-style: italic;
+    padding-top: 2cm;
+    padding-left: 5cm;
+    padding-right: 5cm;
 }
 
 .third-row  .quote .quote-author{
-    outline: 2px solid purple;
     text-align: right;
+    padding-right: 6cm;
+    font-size: 22px;
+    font-weight: 900;
 }
 
 /*4. forth row*/
 
 .forth-row{
     width:100%;
-    outline: 2px solid red;
     padding-bottom: 60px;
     padding-top: 60px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .call{
-    outline: 2px solid black;
-    padding: 30px;
+    padding: 10px;
     display: flex;
-    width: 800px;
-    height: auto;
+    width: 1300px;
+    height: 170px;
     margin: auto;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    background-color: #3882F6;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .call .call-text{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: white;
+    padding: 30px;
+    padding-left: 0px;
+    margin: 0px;
 }
+
+.call .call-text h2{
+    font-size: 32px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.call .call-text p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.call button{
+    background-color: #3882F6;
+    color: white;
+    font-size: 24px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5%;
+    border-color: white;
+}
+
 
 /* 5. Fifth: Footer */
 
@@ -241,6 +275,8 @@ h1{
 }
 
 .footer p{
+    align-self: center;
     color: white;
+    font-size: 20px;
 }
 
